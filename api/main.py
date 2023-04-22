@@ -8,7 +8,7 @@ def predict():
 
     img_path = sys.argv[1]
 
-    model = tf.keras.models.load_model('model')
+    model = tf.keras.models.load_model('gender_classifier_model')
 
     img = image.load_img(img_path, target_size=(224, 224))
     img_array = image.img_to_array(img) / 255
